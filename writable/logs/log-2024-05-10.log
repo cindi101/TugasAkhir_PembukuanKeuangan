@@ -1,0 +1,603 @@
+INFO - 2024-05-10 13:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 13:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 14:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 14:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 14:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 14:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 14:10:39 --> Undefined property: stdClass::$tanggal_expired
+in APPPATH\Views\templates\footer.php on line 52.
+ 1 APPPATH\Views\templates\footer.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$tanggal_expired', 'C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php', 52, [...])
+ 2 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+ 6 APPPATH\Controllers\Transaksi\Pengeluaran.php(37): view('templates/content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Transaksi\Pengeluaran->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi\Pengeluaran))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 14:31:21 --> Undefined property: stdClass::$tanggal_expired
+in APPPATH\Views\templates\footer.php on line 52.
+ 1 APPPATH\Views\templates\footer.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$tanggal_expired', 'C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php', 52, [...])
+ 2 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+ 6 APPPATH\Controllers\Transaksi\Pengeluaran.php(37): view('templates/content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Transaksi\Pengeluaran->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi\Pengeluaran))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 14:36:43 --> Undefined property: stdClass::$tanggal_expired
+in APPPATH\Views\templates\footer.php on line 52.
+ 1 APPPATH\Views\templates\footer.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$tanggal_expired', 'C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php', 52, [...])
+ 2 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+ 6 APPPATH\Controllers\Transaksi\Pengeluaran.php(37): view('templates/content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Transaksi\Pengeluaran->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi\Pengeluaran))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 14:36:55 --> Undefined property: stdClass::$tanggal_expired
+in APPPATH\Views\templates\footer.php on line 52.
+ 1 APPPATH\Views\templates\footer.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$tanggal_expired', 'C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php', 52, [...])
+ 2 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+ 6 APPPATH\Controllers\Transaksi\Pengeluaran.php(37): view('templates/content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Transaksi\Pengeluaran->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi\Pengeluaran))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 14:39:41 --> Undefined property: stdClass::$tanggal_expired
+in APPPATH\Views\templates\footer.php on line 52.
+ 1 APPPATH\Views\templates\footer.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$tanggal_expired', 'C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php', 52, [...])
+ 2 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+ 6 APPPATH\Controllers\Transaksi\Pengeluaran.php(37): view('templates/content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Transaksi\Pengeluaran->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi\Pengeluaran))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 14:39:49 --> Undefined property: stdClass::$tanggal_expired
+in APPPATH\Views\templates\footer.php on line 52.
+ 1 APPPATH\Views\templates\footer.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$tanggal_expired', 'C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php', 52, [...])
+ 2 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+ 6 APPPATH\Controllers\Transaksi\Pengeluaran.php(37): view('templates/content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Transaksi\Pengeluaran->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi\Pengeluaran))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 14:41:06 --> Undefined property: stdClass::$tanggal_expired
+in APPPATH\Views\templates\footer.php on line 52.
+ 1 APPPATH\Views\templates\footer.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$tanggal_expired', 'C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php', 52, [...])
+ 2 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+ 6 APPPATH\Controllers\Transaksi\Pengeluaran.php(37): view('templates/content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Transaksi\Pengeluaran->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi\Pengeluaran))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 14:41:14 --> Undefined property: stdClass::$tanggal_expired
+in APPPATH\Views\templates\footer.php on line 52.
+ 1 APPPATH\Views\templates\footer.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$tanggal_expired', 'C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php', 52, [...])
+ 2 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+ 6 APPPATH\Controllers\Transaksi\Pengeluaran.php(37): view('templates/content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Transaksi\Pengeluaran->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi\Pengeluaran))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 14:48:14 --> Undefined variable: sisa
+in APPPATH\Views\templates\footer.php on line 21.
+ 1 APPPATH\Views\templates\footer.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sisa', 'C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php', 21, [...])
+ 2 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+ 6 APPPATH\Controllers\Transaksi\Pengeluaran.php(37): view('templates/content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Transaksi\Pengeluaran->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi\Pengeluaran))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 14:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 14:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 14:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 14:51:54 --> Error connecting to the database: Error: Class 'SQLite3' not found in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+CRITICAL - 2024-05-10 14:51:54 --> Unable to connect to the database.
+Main connection [SQLite3]: Class 'SQLite3' not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_tb_user`
+WHERE `username` = :username:', [...], false)
+ 4 APPPATH\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->proses()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 14:55:52 --> Error connecting to the database: Error: Class 'SQLite3' not found in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+CRITICAL - 2024-05-10 14:55:52 --> Unable to connect to the database.
+Main connection [SQLite3]: Class 'SQLite3' not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_tb_user`
+WHERE `username` = :username:', [...], false)
+ 4 APPPATH\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->proses()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 14:57:20 --> Error connecting to the database: Error: Class 'SQLite3' not found in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+CRITICAL - 2024-05-10 14:57:20 --> Unable to connect to the database.
+Main connection [SQLite3]: Class 'SQLite3' not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_tb_user`
+WHERE `username` = :username:', [...], false)
+ 4 APPPATH\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->proses()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 14:57:25 --> Error connecting to the database: Error: Class 'SQLite3' not found in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+CRITICAL - 2024-05-10 14:57:25 --> Unable to connect to the database.
+Main connection [SQLite3]: Class 'SQLite3' not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_tb_user`
+WHERE `username` = :username:', [...], false)
+ 4 APPPATH\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->proses()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 14:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 14:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 15:11:31 --> mysqli_sql_exception: Unknown column 'tb_transaksi.id_trans' in 'on clause' in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_bara...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_bara...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_bara...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_bara...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Views\templates\footer.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2024-05-10 15:11:31 --> Unknown column 'tb_transaksi.id_trans' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_barang`.`id_barang` AS `id_barang`, `tb_barang`.`foto` AS `foto`, `tb_barang`.`kode_barang` AS `kode_barang`, `tb_barang`.`nama_barang` AS `nama_barang`, `tb_barang`.`id_jenis_barang` AS `id_jenis_barang`, `tb_barang`.`id_kategori_barang` AS `id_kategori_barang`, `tb_barang`.`harga_jual` AS `harga_jual`, `tb_barang`.`id_satuan_barang` AS `id_satuan_barang`, `tb_stok_barang`.`tanggal_expired` AS `tanggal_expired`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai
+FROM `tb_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_trans` = `tb_detail_transaksi`.`id_trans`
+GROUP BY `tb_barang`.`id_barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_barang`.`id_barang` AS `id_barang`, `tb_barang`.`foto` AS `foto`, `tb_barang`.`kode_barang` AS `kode_barang`, `tb_barang`.`nama_barang` AS `nama_barang`, `tb_barang`.`id_jenis_barang` AS `id_jenis_barang`, `tb_barang`.`id_kategori_barang` AS `id_kategori_barang`, `tb_barang`.`harga_jual` AS `harga_jual`, `tb_barang`.`id_satuan_barang` AS `id_satuan_barang`, `tb_stok_barang`.`tanggal_expired` AS `tanggal_expired`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai
+FROM `tb_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_trans` = `tb_detail_transaksi`.`id_trans`
+GROUP BY `tb_barang`.`id_barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_barang`.`id_barang` AS `id_barang`, `tb_barang`.`foto` AS `foto`, `tb_barang`.`kode_barang` AS `kode_barang`, `tb_barang`.`nama_barang` AS `nama_barang`, `tb_barang`.`id_jenis_barang` AS `id_jenis_barang`, `tb_barang`.`id_kategori_barang` AS `id_kategori_barang`, `tb_barang`.`harga_jual` AS `harga_jual`, `tb_barang`.`id_satuan_barang` AS `id_satuan_barang`, `tb_stok_barang`.`tanggal_expired` AS `tanggal_expired`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai
+FROM `tb_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_trans` = `tb_detail_transaksi`.`id_trans`
+GROUP BY `tb_barang`.`id_barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_barang`.`id_barang` AS `id_barang`, `tb_barang`.`foto` AS `foto`, `tb_barang`.`kode_barang` AS `kode_barang`, `tb_barang`.`nama_barang` AS `nama_barang`, `tb_barang`.`id_jenis_barang` AS `id_jenis_barang`, `tb_barang`.`id_kategori_barang` AS `id_kategori_barang`, `tb_barang`.`harga_jual` AS `harga_jual`, `tb_barang`.`id_satuan_barang` AS `id_satuan_barang`, `tb_stok_barang`.`tanggal_expired` AS `tanggal_expired`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai
+FROM `tb_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_trans` = `tb_detail_transaksi`.`id_trans`
+GROUP BY `tb_barang`.`id_barang`', [], false)
+ 5 APPPATH\Views\templates\footer.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 15:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 15:20:11 --> mysqli_sql_exception: Unknown column 'tb_barang.kode_barang' in 'field list' in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_bara...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_bara...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_bara...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_bara...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Views\templates\footer.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2024-05-10 15:20:11 --> Unknown column 'tb_barang.kode_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai, `tb_stok_barang`.`tanggal_expired`
+FROM `view_total_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_transaksi` = `tb_detail_transaksi`.`id_transaksi`
+WHERE `tb_transaksi`.`status_transaksi` = \'sukses\'
+GROUP BY `tb_barang`.`id_barang`, `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, `tb_stok_barang`.`tanggal_expired`
+HAVING (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai, `tb_stok_barang`.`tanggal_expired`
+FROM `view_total_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_transaksi` = `tb_detail_transaksi`.`id_transaksi`
+WHERE `tb_transaksi`.`status_transaksi` = \'sukses\'
+GROUP BY `tb_barang`.`id_barang`, `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, `tb_stok_barang`.`tanggal_expired`
+HAVING (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai, `tb_stok_barang`.`tanggal_expired`
+FROM `view_total_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_transaksi` = `tb_detail_transaksi`.`id_transaksi`
+WHERE `tb_transaksi`.`status_transaksi` = \'sukses\'
+GROUP BY `tb_barang`.`id_barang`, `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, `tb_stok_barang`.`tanggal_expired`
+HAVING (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai, `tb_stok_barang`.`tanggal_expired`
+FROM `view_total_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_transaksi` = `tb_detail_transaksi`.`id_transaksi`
+WHERE `tb_transaksi`.`status_transaksi` = :tb_transaksi.status_transaksi:
+GROUP BY `tb_barang`.`id_barang`, `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, `tb_stok_barang`.`tanggal_expired`
+HAVING (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 15:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 15:20:19 --> mysqli_sql_exception: Unknown column 'tb_barang.kode_barang' in 'field list' in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_bara...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_bara...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_bara...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_bara...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Views\templates\footer.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2024-05-10 15:20:19 --> Unknown column 'tb_barang.kode_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai, `tb_stok_barang`.`tanggal_expired`
+FROM `view_total_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_transaksi` = `tb_detail_transaksi`.`id_transaksi`
+WHERE `tb_transaksi`.`status_transaksi` = \'sukses\'
+GROUP BY `tb_barang`.`id_barang`, `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, `tb_stok_barang`.`tanggal_expired`
+HAVING (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai, `tb_stok_barang`.`tanggal_expired`
+FROM `view_total_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_transaksi` = `tb_detail_transaksi`.`id_transaksi`
+WHERE `tb_transaksi`.`status_transaksi` = \'sukses\'
+GROUP BY `tb_barang`.`id_barang`, `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, `tb_stok_barang`.`tanggal_expired`
+HAVING (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai, `tb_stok_barang`.`tanggal_expired`
+FROM `view_total_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_transaksi` = `tb_detail_transaksi`.`id_transaksi`
+WHERE `tb_transaksi`.`status_transaksi` = \'sukses\'
+GROUP BY `tb_barang`.`id_barang`, `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, `tb_stok_barang`.`tanggal_expired`
+HAVING (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, SUM(tb_stok_barang.jumlah) AS total_stok, SUM(tb_detail_transaksi.jumlah_barang) AS stok_terpakai, `tb_stok_barang`.`tanggal_expired`
+FROM `view_total_barang`
+LEFT JOIN `tb_stok_barang` ON `tb_barang`.`id_barang` = `tb_stok_barang`.`id_barang`
+LEFT JOIN `tb_detail_transaksi` ON `tb_detail_transaksi`.`id_barang` = `tb_barang`.`id_barang`
+LEFT JOIN `tb_transaksi` ON `tb_transaksi`.`id_transaksi` = `tb_detail_transaksi`.`id_transaksi`
+WHERE `tb_transaksi`.`status_transaksi` = :tb_transaksi.status_transaksi:
+GROUP BY `tb_barang`.`id_barang`, `tb_barang`.`kode_barang`, `tb_barang`.`nama_barang`, `tb_stok_barang`.`tanggal_expired`
+HAVING (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 15:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 15:20:56 --> Error connecting to the database: Error: Class 'SQLite3' not found in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+CRITICAL - 2024-05-10 15:20:56 --> Unable to connect to the database.
+Main connection [SQLite3]: Class 'SQLite3' not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_tb_user`
+WHERE `username` = :username:', [...], false)
+ 4 APPPATH\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->proses()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 15:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 15:22:40 --> Error connecting to the database: Error: Class 'SQLite3' not found in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+CRITICAL - 2024-05-10 15:22:40 --> Unable to connect to the database.
+Main connection [SQLite3]: Class 'SQLite3' not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_tb_user`
+WHERE `username` = :username:', [...], false)
+ 4 APPPATH\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->proses()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 15:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 15:22:48 --> Error connecting to the database: Error: Class 'SQLite3' not found in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+CRITICAL - 2024-05-10 15:22:48 --> Unable to connect to the database.
+Main connection [SQLite3]: Class 'SQLite3' not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_tb_user`
+WHERE `username` = :username:', [...], false)
+ 4 APPPATH\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->proses()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 15:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-10 15:23:11 --> Error connecting to the database: Error: Class 'SQLite3' not found in C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+CRITICAL - 2024-05-10 15:23:11 --> Unable to connect to the database.
+Main connection [SQLite3]: Class 'SQLite3' not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_tb_user`
+WHERE `username` = :username:', [...], false)
+ 4 APPPATH\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->proses()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2024-05-10 15:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 15:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 16:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 16:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 16:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

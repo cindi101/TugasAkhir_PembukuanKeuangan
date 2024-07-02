@@ -1,0 +1,605 @@
+INFO - 2023-09-05 13:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 13:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 13:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 13:45:06 --> mysqli_sql_exception: Table 'db_pembukuan.view_total_barang' doesn't exist in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2023-09-05 13:45:06 --> Table 'db_pembukuan.view_total_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 13:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 13:45:10 --> mysqli_sql_exception: Table 'db_pembukuan.view_total_barang' doesn't exist in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2023-09-05 13:45:10 --> Table 'db_pembukuan.view_total_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 13:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 13:47:01 --> mysqli_sql_exception: Table 'db_pembukuan.view_total_barang' doesn't exist in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2023-09-05 13:47:01 --> Table 'db_pembukuan.view_total_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 13:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 13:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 13:51:00 --> mysqli_sql_exception: Table 'db_pembukuan.view_total_barang' doesn't exist in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2023-09-05 13:51:00 --> Table 'db_pembukuan.view_total_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 13:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 13:51:07 --> mysqli_sql_exception: Table 'db_pembukuan.view_total_barang' doesn't exist in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2023-09-05 13:51:07 --> Table 'db_pembukuan.view_total_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 13:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 13:51:54 --> mysqli_sql_exception: Table 'db_pembukuan.view_total_barang' doesn't exist in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2023-09-05 13:51:54 --> Table 'db_pembukuan.view_total_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 13:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 13:52:02 --> mysqli_sql_exception: Table 'db_pembukuan.view_total_barang' doesn't exist in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2023-09-05 13:52:02 --> Table 'db_pembukuan.view_total_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 13:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 13:53:40 --> mysqli_sql_exception: Table 'db_pembukuan.view_total_barang' doesn't exist in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2023-09-05 13:53:40 --> Table 'db_pembukuan.view_total_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 14:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 14:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 14:00:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_pembukuan', 3306, '', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jum...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jum...', Array, false)
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#9 {main}
+CRITICAL - 2023-09-05 14:00:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jumlah_harus_bayar`) AS `jumlah_harus_bayar`
+FROM `tb_transaksi`', [], false)
+ 3 APPPATH\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 14:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 14:01:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_pembukuan', 3306, '', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jum...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jum...', Array, false)
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#9 {main}
+CRITICAL - 2023-09-05 14:01:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jumlah_harus_bayar`) AS `jumlah_harus_bayar`
+FROM `tb_transaksi`', [], false)
+ 3 APPPATH\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 14:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 14:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 14:01:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_pembukuan', 3306, '', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jum...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jum...', Array, false)
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#9 {main}
+CRITICAL - 2023-09-05 14:01:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jumlah_harus_bayar`) AS `jumlah_harus_bayar`
+FROM `tb_transaksi`', [], false)
+ 3 APPPATH\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 14:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 14:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 14:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 14:04:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_pembukuan', 3306, '', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jum...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jum...', Array, false)
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#9 {main}
+CRITICAL - 2023-09-05 14:04:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jumlah_harus_bayar`) AS `jumlah_harus_bayar`
+FROM `tb_transaksi`', [], false)
+ 3 APPPATH\Controllers\Pages.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 14:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 14:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 14:05:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_pembukuan', 3306, '', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Login->proses()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#9 {main}
+CRITICAL - 2023-09-05 14:05:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `username` = :username:', [...], false)
+ 3 APPPATH\Controllers\Login.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->proses()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 14:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 14:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 14:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-05 14:06:41 --> mysqli_sql_exception: Table 'db_pembukuan.view_total_barang' doesn't exist in C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Views\templates\content.php(6): include('C:\\Users\\ACER\\O...')
+#6 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(224): include('C:\\Users\\ACER\\O...')
+#7 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Common.php(1180): CodeIgniter\View\View->render('templates/conte...', Array, true)
+#9 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\app\Controllers\Pages.php(52): view('templates/conte...', Array)
+#10 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Pages->index()
+#11 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#12 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\ACER\OneDrive\Documents\TA\TA 2\pembukuan_keuangan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#15 {main}
+CRITICAL - 2023-09-05 14:06:41 --> Table 'db_pembukuan.view_total_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= 50')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_total_barang`
+WHERE (total_stok - stok_terpakai) <= :(total_stok - stok_terpakai):', [...], false)
+ 5 APPPATH\Views\templates\footer.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\templates\content.php(6): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\footer.php')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\app\\Views\\templates\\content.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('templates/content', [], true)
+10 APPPATH\Controllers\Pages.php(52): view('templates/content', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pages->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\OneDrive\\Documents\\TA\\TA 2\\pembukuan_keuangan\\public\\index.php')
+INFO - 2023-09-05 14:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 14:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-05 14:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
